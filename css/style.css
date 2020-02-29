@@ -150,7 +150,7 @@ p.contact {
     color: #DAE0E2;
 }
 
-.contactUs > form{
+.contactUs>form, .form > form{
     width: 50%;
     margin: 0 auto;
     padding: 3%;
@@ -161,13 +161,14 @@ p.contact {
     grid-row-gap: 20px;
 }
 
-.contactUs > form > label{
+.contactUs>form>label, .form > form > label {
     font-size: 22px;
     color: #DAE0E2;
     font-weight: 500;
 }
 
-.contactUs > form > input, textarea{
+.contactUs>form>input,
+textarea, .form > form > input {
     font-size: 22px;
     color: #2C3335;
     border: none;
@@ -176,18 +177,46 @@ p.contact {
     font-weight: 600;
 }
 
-#submit{
+
+
+#submit, .form > form > #signup, .form > form > #signin {
     grid-column: 1/3;
-    /* color: #FAD02E; */
 }
 
-#submit:hover{
+#submit:hover {
+    background-color: #FAD02E;
+    color: #2C3335;
+    transition: all ease-in-out 0.2s;
+}
+.form > form > #signup:hover {
+    background-color: #FAD02E;
+    color: #2C3335;
+    transition: all ease-in-out 0.2s;
+}
+.form > form > #signin:hover {
     background-color: #FAD02E;
     color: #2C3335;
     transition: all ease-in-out 0.2s;
 }
 
-.content > hr{
+.form > form > #forgotPassword{
+    text-decoration: none;
+    color: #DAE0E2;
+    font-size: 22px;
+    grid-column: 1/3;
+    text-align: center;
+    font-weight: 700;
+    padding: 1%;
+    margin: 0 auto;
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+.form > form > #forgotPassword:hover{
+    color: #FAD02E;
+}
+
+.content>hr {
     width: 70%;
     margin: 2% auto;
 }
@@ -199,6 +228,19 @@ p.contact {
     letter-spacing: 2px;
     word-spacing: 5px;
 }
+
+/* .form > form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 3%;
+    border: 2px solid #DAE0E2;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 20px;
+} */
+
+
 
 .carCollection {
     width: 70%;
